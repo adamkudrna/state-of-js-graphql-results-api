@@ -2,7 +2,7 @@ import localesYAML from './locales.yml'
 import { Locale } from '../types'
 
 // initialize every locale with empty stringFiles array
-const locales: Locale[] = localesYAML.map((l: any) => ({...l, stringFiles: []}))
+const locales: Locale[] = localesYAML.map((l: any) => ({ ...l, stringFiles: [] }))
 
 const contexts: any = {
     common: require.context('./common/', true, /\.yml$/),
